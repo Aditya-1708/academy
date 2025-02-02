@@ -7,7 +7,7 @@ import axiosInstance from "../axios";
 // Button Component
 const Button = ({ children, ...props }) => (
   <button
-    className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed"
+    className="px-4 py-2 bg-emerald-600 text-white rounded-md hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed"
     {...props}
   >
     {children}
@@ -17,7 +17,7 @@ const Button = ({ children, ...props }) => (
 // Input Component
 const Input = (props) => (
   <input
-    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500"
     {...props}
   />
 );
@@ -25,7 +25,7 @@ const Input = (props) => (
 // Textarea Component
 const Textarea = (props) => (
   <textarea
-    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500"
     {...props}
   />
 );
@@ -141,15 +141,15 @@ const ContactUs = () => {
           <Card title="Our Location">
             <div className="space-y-4">
               <div className="flex items-center space-x-2">
-                <MapPin className="text-blue-600" />
+                <MapPin className="text-emerald-600" />
                 <p>Karnataka Youth Cricket Academy, 123 Main Street, Bangalore, India</p>
               </div>
               <div className="flex items-center space-x-2">
-                <Mail className="text-blue-600" />
+                <Mail className="text-emerald-600" />
                 <p>info@karnatakacricketacademy.com</p>
               </div>
               <div className="flex items-center space-x-2">
-                <Phone className="text-blue-600" />
+                <Phone className="text-emerald-600" />
                 <p>+91 123 456 7890</p>
               </div>
             </div>

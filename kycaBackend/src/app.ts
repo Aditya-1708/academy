@@ -12,11 +12,7 @@ const prisma = new PrismaClient();
 
 app.use(express.json());
 app.use(cors());
-app.use(cors({
-  origin: "http://localhost:3000", // Allow requests only from this origin
-  methods: "GET,POST,PUT,DELETE,OPTIONS",
-  allowedHeaders: "Content-Type,Authorization",
-}))
+
 app.use('/api/coach',coachRoutes)
 app.use('/api/admin',adminRoutes)
 app.use('/api/user',userRoutes)
