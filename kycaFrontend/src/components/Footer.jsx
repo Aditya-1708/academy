@@ -98,7 +98,7 @@ const Footer = () => {
 
         {/* Footer Text */}
         <div className="mt-8 md:mt-0 text-center md:text-left">
-          <p className="text-base text-gray-500">
+          <p className="text-center pb-2 text-gray-500">
             2025 KYCA Academy. All rights reserved.
           </p>
         </div>
