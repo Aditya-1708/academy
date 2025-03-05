@@ -31,8 +31,11 @@ const Footer = () => {
         <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 md:flex md:items-center md:justify-between lg:px-8">
           {/* Logo Section */}
           <div className="flex items-center space-x-2 md:order-1">
-            <MdOutlineSportsCricket className="text-3xl text-emerald-600" />
-            <span className="text-2xl font-bold text-emerald-600">KYCA</span>
+          <img
+                src="/kyca.svg"
+                alt="KYCA Logo"
+                className="w-8 h-8 text-emerald-500"
+              />            <span className="text-2xl font-bold text-emerald-600">KYCA</span>
           </div>
 
           {/* Navigation Links */}

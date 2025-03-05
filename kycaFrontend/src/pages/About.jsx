@@ -86,11 +86,8 @@ function About() {
     animate={{ opacity: 1, scale: 1 }}
     transition={{ delay: 0.3, duration: 0.5 }}
   >
-    The Karnataka Youth Cricket Academy was started on 23 December 2010 with
-    the specific aim of focusing on the deliverance of top-quality,
-    high-performance coaching in a professional manner with an eye on getting
-    the best out of kids with fire, passion, ability, and the desire to make
-    it big.
+    The Karnataka Youth Cricket Academy was started on 23 December 2010 with the specific aim of focussing on the deliverance of top-quality, high-performance coaching in a professional manner with an eye on getting the best out of kids with fire, passion, ability and the desire to make it big. A conscious decision was made by the founder,
+    Ranjith Ravi -- a Cricket Australia Level 2 certified coach -- to provide equal opportunities to boys and girls alike with a view to bridging the gap that exists between men’s and women’s cricket both in India and worldwide.
   </motion.p>
   {/* Call to Action */}
 </div>
@@ -180,41 +177,44 @@ function About() {
   </div>
 </div>
 </section>
-   {/* Activities Section */}
-<section className="py-16">
-<div className="container mx-auto px-4" data-aos="fade-up">
-  <motion.h2
-    className="text-4xl font-extrabold text-center mb-12 tracking-wide"
-    initial={{ opacity: 0 }}
-    animate={{ opacity: 1 }}
-    transition={{ delay: 0.6, duration: 0.5 }}
-  >
-    Activities
-  </motion.h2>
-  <div className="flex flex-col gap-12">
-    {[activity1, activity2].map((activity, index) => (
-      <div
-        key={index}
-        className={`flex flex-col md:flex-row ${index % 2 === 1 ? "md:flex-row-reverse" : ""} items-center gap-6`}
-      >
-        <img
-          src={activity}
-          alt={`Activity ${index + 1}`}
-          className="w-2/3 md:w-1/4 rounded-lg shadow-lg transition-transform duration-300 hover:scale-110"
-        />
-        <div className="text-lg text-gray-600 md:w-1/2">
-          <p>
-            {[
-              "Personal one-on-one training sessions for budding cricketers, leveraging state-of-the-art technology such as Pitch Vision, StanceBeam, and bowling machines.",
-              "Regular domestic and international tours to provide exposure to trainees, ensuring they experience diverse playing conditions and cultures.",
-            ][index]}
+{/* location services */}
+<section className="py-16 flex flex-col items-center gap-8">
+<h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+            Our Locations
+          </h2>
+          <p className="mt-2 text-xl text-gray-500">
+            Check out our locations on Google maps
           </p>
-        </div>
-      </div>
-    ))}
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-6xl">
+    <div className="max-w-md w-full bg-white rounded-2xl shadow-lg p-4">
+      <h2 className="text-2xl font-bold mb-4">KYCA Main Location</h2>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3889.2065335074917!2d77.6521941539673!3d12.894437116040578!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae15d7a83c36a3%3A0xaa448f0be04b408!2sKYCA!5e0!3m2!1sen!2sin!4v1741157071264!5m2!1sen!2sin"
+        width="100%"
+        height="300"
+        style={{ border: 0 }}
+        allowFullScreen=""
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+      ></iframe>
+      <p className="mt-4 text-gray-600">Our main facility offers state-of-the-art training grounds, professional coaching, and a welcoming environment for aspiring cricketers.</p>
+    </div>
+    <div className="max-w-md w-full bg-white rounded-2xl shadow-lg p-4">
+      <h2 className="text-2xl font-bold mb-4">KYCA Indus Sarjapura-Attibele Road</h2>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.218245808132!2d77.77357017572164!3d12.829169017983682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae730015f63a2b%3A0x380fcc6d87af3d6e!2sKYCA%20INDUS%20SARJAPURA-ATTIBELE%20ROAD!5e0!3m2!1sen!2sin!4v1741157055967!5m2!1sen!2sin"
+        width="100%"
+        height="300"
+        style={{ border: 0 }}
+        allowFullScreen=""
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+      ></iframe>
+      <p className="mt-4 text-gray-600">This branch provides excellent facilities and top-tier coaching, ensuring players get exposure to diverse playing environments.</p>
+    </div>
   </div>
-</div>
 </section>
+
     {/* Services Section */}
     <section className="py-16 bg-white">
 <div className="container mx-auto px-4" data-aos="fade-up">
@@ -228,11 +228,6 @@ function About() {
   </motion.h2>
   <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
     {[
-      {
-        title: "Pitches",
-        description:
-          "Matting, Astroturf, and turf pitches so that the kids are exposed to different kinds of playing surfaces early on.",
-      },
       {
         title: "Fitness Centre",
         description:
@@ -252,6 +247,21 @@ function About() {
         title: "Technique Analysis",
         description:
           "Technique analysis from our array of coaches well-versed in the use of technology.",
+      },
+      {
+        title: "Turf & Matting pitches - Good box nets",
+        description:
+          "High-quality turf and matting pitches with well-maintained box nets, providing an ideal environment for focused training and skill enhancement.",
+      },
+      {
+        title: "Match Practices",
+        description:
+          "Regular match practice sessions to help players refine their skills, develop match awareness, and gain valuable on-field experience.",
+      },
+      {
+        title: "One on One coaching (Advanced booking)",
+        description:
+         "Personalized one-on-one coaching sessions with expert trainers, available through advanced booking, ensuring tailored guidance and focused improvement.",
       },
     ].map((service, index) => (
       <motion.div

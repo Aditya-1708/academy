@@ -51,7 +51,7 @@ const Testimonial = () => {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            What Our Students Say
+            Testimonials
           </h2>
           <p className="mt-4 text-xl text-gray-500">
             Hear from some of our successful cricketers

@@ -349,12 +349,12 @@ const AdminPanel = () => {
         <div className={`p-6 border-b ${darkMode ? "border-gray-700" : "border-gray-200"}`}>
           <div className="flex justify-between items-center">
             <h1 className="text-2xl md:text-3xl font-bold">Admin Panel</h1>
-            <button
+            {/* <button
               onClick={() => setDarkMode(!darkMode)}
               className={`px-4 py-2 rounded-md ${darkMode ? "bg-yellow-500 text-gray-900" : "bg-gray-800 text-white"}`}
             >
               {darkMode ? "Light Mode" : "Dark Mode"}
-            </button>
+            </button> */}
           </div>
           {success && (
             <p className={`mt-2 ${success.includes("Failed") ? "text-red-500" : "text-green-500"}`}>{success}</p>

@@ -1,5 +1,5 @@
 import express, { Application } from 'express';
-import { PrismaClient } from '@prisma/client';
+import {prisma}  from './pooler';
 import inquiryRoutes from './routes/inquiry';
 import userRoutes from './routes/user';
 import cors from 'cors';
@@ -8,7 +8,6 @@ import gemRoutes from './routes/gem'
 import coachRoutes from './routes/coach'
 import path from 'path';
 const app: Application = express();
-const prisma = new PrismaClient();
 
 app.use(express.json());
 app.use(cors());
